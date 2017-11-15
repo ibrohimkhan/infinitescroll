@@ -59,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
                     public void run() {
                         gridLayoutManager.setOrientation(orientation);
                         recyclerView.setLayoutManager(gridLayoutManager);
+                        recyclerView.getAdapter().notifyDataSetChanged();
                     }
                 });
             }
